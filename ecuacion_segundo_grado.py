@@ -69,8 +69,8 @@ x2 = 0
 
 if (a != 0):
     if (b*b-4*a*c < 0):
-        x1 = complex(-b/(2*a), round(math.sqrt(abs(b*b-4*a*c))/(2*a), 3))
-        x2 = complex(-b/(2*a), round(-math.sqrt(abs(b*b-4*a*c))/(2*a), 3))
+        x1 = complex(round(-b/(2*a), 3), round(math.sqrt(abs(b*b-4*a*c))/(2*a), 3))
+        x2 = complex(round(-b/(2*a), 3), round(-math.sqrt(abs(b*b-4*a*c))/(2*a), 3))
     else:
         x1 = round((-b+math.sqrt(b*b-4*a*c))/(2*a), 3)
         x2 = round((-b-math.sqrt(b*b-4*a*c))/(2*a), 3)
